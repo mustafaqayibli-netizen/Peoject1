@@ -8,6 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: unzip -q ./*.zip
+      - run: echo "window.DEFAULT_KEY = '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';" > ai-companion-mobile/www/config.js
       - uses: actions/setup-node@v4
         with:
           node-version: 20
